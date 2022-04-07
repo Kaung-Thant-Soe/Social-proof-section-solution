@@ -17,6 +17,12 @@ body{
 
 /* Bg Image */
 
+.mobile-bg img{
+
+    position: absolute;
+    visibility: hidden;
+}
+
 .bg{
 
     height: 100vh;
@@ -107,7 +113,6 @@ body{
     justify-content: flex-start;
     padding-left: 20px;
     
-    
 }
 
 .rating .review img,p{
@@ -166,8 +171,7 @@ body{
     width: 23%;
     height:fit-content ;
     padding: 50px 30px;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 
 }
 
@@ -180,6 +184,7 @@ body{
     margin: 0 0 20px 0;
 
 }
+
 h3{
 
     line-height: 25px;
@@ -188,7 +193,7 @@ h3{
 
 .name p{
 
-    color: hsl(303, 10%, 53%);
+    color: hsl(333, 80%, 67%);
 
 }
 
@@ -223,4 +228,190 @@ h3{
 
     line-height: 23px;
 
+}
+
+/* For Mobile max-width:375px and Lower */
+
+@media only screen and (max-width:375px) {
+
+    body{
+
+        max-width: 375px;
+
+    }
+
+    /* For Background image in Mobile */
+
+    .bg{
+
+        display: none;
+    }
+
+    .mobile-bg img{
+        
+        visibility: visible;
+        position: absolute;
+
+    }
+
+    .mobile-top{
+
+        top: 0;
+        left: 0;
+
+    }
+
+    .mobile-bottom{
+
+        bottom: -150px;
+        right: 0;
+
+    }
+
+    /* For Content in Mobile */
+
+    .content{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    /* For Upper Section in Mobile */
+
+    .upper{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+    }
+
+    .upper .service{
+        
+        font-size: 15px;
+        width: 100%;
+        height: fit-content;
+        margin-top: 20px;
+        
+    }
+
+    .service h1{
+
+        font-size: xx-large;
+        margin-bottom: 15px;
+
+    }
+
+    .service p{
+
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+    }
+
+    .service p br{
+
+        display: none;
+       
+    }
+
+    .rating{
+
+        width: 100%;
+
+    }
+
+    .rating .review{
+
+        width: 100%;
+        height: 75px;
+        padding-left: 0;
+        display: inline-block;
+        
+    }
+
+    .review img{
+
+        margin: 10px 0 10px 0;
+
+    }
+
+    .review p{
+
+        margin: 5px 0 10px 0;
+        display: block;
+
+    }
+
+    .rating .first{
+
+        margin: 20px 0 10px 0;
+
+    }
+
+    .rating .second{
+
+        margin: 10px 0 10px 0;
+
+    }
+
+    .rating .third{
+
+        margin: 10px 0 30px 0;
+
+    }
+
+    /* For Lower Section in Mobile */
+
+    .lower{
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: 30px;
+
+    }
+
+    .all-set{
+
+        width: 79%;
+        padding: 50px 27px;
+        height: fit-content;
+        text-align: left;
+
+    }
+
+    .feedback{
+
+        font-size: 14px;
+
+    }
+
+    .margin-1{
+
+        margin: 0 0 15px 0;
+
+    }
+
+    .margin-2{
+
+        margin: 15px 0 15px 0;
+
+    }
+
+    .margin-3{
+
+        margin: 15px 0 40px 0;
+
+    }
+    
 }
